@@ -6,7 +6,7 @@ function Toggle(){
     <>
     <h1>Switch button</h1>
     <button onClick={() => setIsOff(!isOff)} >
-        {isOff? "ON" : "OFF"}
+        {isOff? "OFF" : "ON"}
     </button>
     </>
     );
