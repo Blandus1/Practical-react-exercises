@@ -12,7 +12,7 @@ const handleChange= (e) =>{
 
 const handleClick =(e) =>{
     e.preventDefault() //we used preventDefault because our button is in a form which has a reload default behavior
-    setButton((prev) => [...prev,value])// because it is for a button
+    setButton((prev) => [...prev,value])// this gives the current value followed by the previous value
 };
     
 const handleDeletevalue= (deleted) =>{
@@ -20,18 +20,23 @@ const handleDeletevalue= (deleted) =>{
 }
 
     return(
-    <form>
+        <div className="todos">
+<form>
     <h1>My To-do app</h1>
     <input value={value} onChange={handleChange} type='text' placeholder="enter text"/>
     <button value={button} type= "button" onClick={handleClick}>Add</button>
 
     <ol>
         {button.map((item,index) => {
-        return <li key={index}>{item}</li>
+        return <li key={index}>{item}
+              <button onClick={()=>handleDeletevalue(index)} className="input">Delete</button>
+
+        </li>
         })}
-      <button onClick={handleDeletevalue}>Delete</button>
     </ol>
     </form>
+        </div>
+    
     );
 }
 

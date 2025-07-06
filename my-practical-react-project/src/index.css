@@ -1,0 +1,8 @@
+.todos {
+    background-color: rgb(106, 109, 98);
+}
+
+input {
+    border-radius: 40px;
+    position: relative;
+}

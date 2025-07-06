@@ -8,7 +8,7 @@ const [count,setCount] = useState(0)
         <button onClick={()=> setCount(count+1)} className="button">Increase </button>
         <button onClick={()=> setCount( count -1)} className="button">Decrease </button>
 
-
+           <button>submit </button>
         </>
     );
 }
