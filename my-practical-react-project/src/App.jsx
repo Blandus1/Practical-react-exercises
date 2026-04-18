@@ -1,5 +1,5 @@
 
-import Button from "./Button.jsx";
+import { Counter } from "./counterApp.jsx";
 import Toggle from "./Toggle.jsx"
 import TextBox from "./Textbox.jsx";
 import Context from './Context.jsx';
@@ -11,7 +11,7 @@ function App() {
   
   return(
     <>
-    <Button/>
+    <Counter/>
     <Toggle/>
     <TextBox/>
      <Todo/>
