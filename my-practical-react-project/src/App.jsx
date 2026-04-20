@@ -1,8 +1,7 @@
 
-import ReactTimeInput  from "./realTimeInput.jsx";
-import { Counter } from "./counterApp.jsx";
+import {RealTimeInput } from "./realTimeInput.jsx";
+import{ Counter  }from "./counterApp.jsx";
 import Toggle from "./Toggle.jsx"
-import TextBox from "./Textbox.jsx";
 import Context from './Context.jsx';
 import Todo from './Todo.jsx';
 import Effect from './Effect.jsx'
@@ -12,13 +11,9 @@ function App() {
   
   return(
     <>
-
-    <RealTimeInput/>
-
     <Counter/>
-
+    <RealTimeInput/>
     <Toggle/>
-    <TextBox/>
      <Todo/>
     <Context/>
     <Effect/>
