@@ -1,5 +1,4 @@
-
-import Button from "./Button.jsx";
+import ReactTimeInput  from "./realTimeInput.jsx";
 import Toggle from "./Toggle.jsx"
 import TextBox from "./Textbox.jsx";
 import Context from './Context.jsx';
@@ -11,7 +10,7 @@ function App() {
   
   return(
     <>
-    <Button/>
+    <RealTimeInput/>
     <Toggle/>
     <TextBox/>
      <Todo/>
